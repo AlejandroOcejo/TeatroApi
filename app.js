@@ -3,7 +3,12 @@ const fs = require('fs');
 const app = express();
 const port = 3000;
 
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
+
+const initSeatsRoute = require('./routes/initSeats.js');
+
+app.use('/initSeats', initSeatsRoute);
 
 const users = [];
 
@@ -12,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-    fs.readFile('register.html', 'utf8', (error, data) => {
+    fs.readFile('views/register.html', 'utf8', (error, data) => {
         if (error) {
             console.error('Error reading HTML file:', error);
             res.status(500).send('Internal Server Error');
@@ -21,7 +26,21 @@ app.get('/register', (req, res) => {
         res.send(data);
     });
 });
+
+app.get('/reserve', (req, res) => {
+    fs.readFile('views/reserve.html', 'utf8', (error, data) => {
+        if (error) {
+            console.error('Error reading HTML file:', error);
+            res.status(500).send('Internal Server Error');
+            return;
+        }
+        res.send(data);
+    });
+});
+
+
 let id = 0;
+
 app.post('/saveUser', (req, res) => {
     const { firstName, lastName, email, password } = req.body;
     const user = {
@@ -35,7 +54,7 @@ app.post('/saveUser', (req, res) => {
     users.push(user);
 
     var json = JSON.stringify(users);
-    fs.writeFile('users.json', json, (error) => {
+    fs.writeFile('data/users.json', json, (error) => {
         if (error) {
             console.error('Error writing to users.json:', error);
             res.status(500).send('Internal Server Error');
@@ -54,3 +73,4 @@ app.use(function (req, res, next) {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
+
