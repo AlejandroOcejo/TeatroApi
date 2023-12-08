@@ -15,8 +15,15 @@ const users = [];
 const seatsData = initializeSeats();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    fs.readFile('views/index.html', 'utf8', (error, data) => {
+        if (error) {
+            console.error('Error reading HTML file:', error);
+            return;
+        }
+        res.send(data);
+    });
 });
+
 
 app.get('/register', (req, res) => {
     fs.readFile('views/register.html', 'utf8', (error, data) => {
