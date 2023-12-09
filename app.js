@@ -181,10 +181,10 @@ app.get('/loadUser', (req, res) => {
     const foundUser = validateUser(email, password);
 
     if (foundUser) {
-        res.redirect(`/?user=${encodeURIComponent(foundUser.email)}`);
+        res.redirect(`/`);
     } else {
         res.redirect('/login')
-       
+
     }
 });
 app.use(function (req, res, next) {
