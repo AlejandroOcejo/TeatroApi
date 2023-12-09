@@ -7,12 +7,40 @@ const { initializeSeats } = require('./initSeats');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-/* const seatInit = require("./initSeats.js");
-app.use("/initSeat", seatInit); */
+app.set('view engine', 'ejs');
 
+function getObraContent(nameForUrl, callback) {
+    fs.readFile('data/obras.json', 'utf8', (error, data) => {
+        if (error) {
+            console.log('Error reading JSON file:', error);
+            callback(error, null);
+            return;
+        }
 
-const users = [];
-const seatsData = initializeSeats();
+        const obras = JSON.parse(data);
+        const obra = obras.find(obra => obra.nameForUrl === nameForUrl);
+
+        if (!obra) {
+            console.log('Obra not found');
+            callback({ message: 'Obra not found' }, null);
+        } else {
+            callback(null, obra);
+        }
+    });
+}
+
+app.get('/obra/:nameForUrl', (req, res) => {
+    const obraName = req.params.nameForUrl;
+
+    getObraContent(obraName, (error, obraContent) => {
+        if (error) {
+            res.status(500).send('Internal Server Error');
+        } else {
+            res.render('obras.ejs', { obraContent });
+        }
+    });
+});
+
 
 app.get('/', (req, res) => {
     fs.readFile('views/index.html', 'utf8', (error, data) => {
@@ -25,8 +53,19 @@ app.get('/', (req, res) => {
 });
 
 
+
 app.get('/register', (req, res) => {
     fs.readFile('views/register.html', 'utf8', (error, data) => {
+        if (error) {
+            console.error('Error reading HTML file:', error);
+            return;
+        }
+        res.send(data);
+    });
+});
+
+app.get('/obrasJson', (req, res) => {
+    fs.readFile('data/obras.json', 'utf8', (error, data) => {
         if (error) {
             console.error('Error reading HTML file:', error);
             return;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/obraPage.css">
+    <script src="/js/obraPage.js"></script>
+    <title>
+        <%= obraContent.name %>
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="logoDiv">
+            <a class="logoa" href="/"><img src="/assets/logoblanco.png" href="/a" alt=""></a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="/reserve">Reserva</a>
+            <a href="/register">Registro</a>
+            <a href="#">Contact</a>
+        </div>
+        <span style="font-size:30px;position: absolute;right: 15px;cursor:pointer" onclick="openNav()"><img
+                src="/assets/iconomenu.png" alt=""></span>
+    </header>
+
+    <main>
+        <div class="bodyDiv">
+            <div>
+
+                <img src=<%=obraContent.imgRoute %> alt="">
+
+            </div>
+            <div class="infoObraDiv">
+                <h1 class="obraName">
+                    <%= obraContent.name %>
+                </h1>
+                <h2 class="obraDuration">
+                    Duración: <%= obraContent.duration %>
+                </h2>
+                <div class="obraDescription">
+                    <%= obraContent.description %>
+                </div>
+                <button class="reserveButton">Reserva</button>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <!-- Your common footer content -->
+    </footer>
+</body>
+
+</html>

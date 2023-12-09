@@ -82,54 +82,43 @@ header {
     }
 }
 
-video {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 650px;
-    object-fit: fill;
+
+.bodyDiv {
+    display: flex;
+    flex-direction: row;
 }
 
-.obrasTittleDiv {
+.infoObraDiv {
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#obrasDiv {
-    display: flex;
+    flex-direction: column;
+    padding: 20px;
     justify-content: space-around;
+    align-items: center;
 }
 
-.img-responsive {
-    width: 20%;
-    object-fit: cover;
-    display: block;
-    margin: 0 10px;
-    border: #7E1034 3px solid;
+.reserveButton {
+    width: 200px;
+    height: 75px;
+    background-color: #A81846;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
 }
 
-@media screen and (max-width: 750px) {
-    video {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 40%;
-        object-fit: fill;
-    }
+.obraDescription {
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: 24px;
 }
 
+.obraName {
+    margin: 10px;
 
-@media screen and (max-width: 500px) {
-    video {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 30%;
-        object-fit: fill;
-    }
+}
+
+.obraDuration {
+    margin: 0;
+    margin-bottom: 5%;
 }
