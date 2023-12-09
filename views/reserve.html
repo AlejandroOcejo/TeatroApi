@@ -11,6 +11,21 @@
 </head>
 
 <body>
+    <header>
+        <div class="logoDiv">
+            <a class="logoa" href="/"><img src="/assets/logoblanco.png" href="/a" alt=""></a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/catalogue">Obras</a>
+            <a href="/reserve">Reserva</a>
+            <a href="/register">Registro</a>
+            <a id="loginLink" class="login-link" href="/login">Inicio Sesión</a>
+            <a id="logoutLink" class="logout-link" href="/" onclick="logout()">Cerrar Sesión</a>
+        </div>
+        <span style="font-size:30px;position: absolute;right: 15px;cursor:pointer" onclick="openNav()"><img
+                src="/assets/iconomenu.png" alt=""></span>
+    </header>
 
     <div class="test">
         <div class="container">
@@ -80,10 +95,39 @@
             </div>
         </div>
 
-        <button style="width: 150px; height: 50px; background-color: #7E1034; border: none; margin-top: 50px;" id="reserveButton">Reservar asientos</button>
+        <button style="width: 150px; height: 50px; background-color: #7E1034; border: none; margin-top: 50px;"
+            id="reserveButton">Reservar asientos</button>
 
     </div>
+    <footer>
+        <div class="left_column">
+            <img src="/assets/logoblanco.png" alt="" class="logo_footer">
+        </div>
 
+        <div class="center_column">
+            <h2>Contactanos</h2>
+            <div class="contact">
+                <div>
+                    <img src="/assets/Phone-handset.png" alt="" class="icon">
+                    <p class="txt">+34 976 459 12 92</p>
+                </div>
+                <div><img src="/assets/correo-electronico.png" alt="" class="icon">
+                    <p class="email_txt">teatralis@gmail.com</p>
+                </div>
+                <div><img src="/assets/pasador-de-ubicacion.png" alt="" class="icon">
+                    <p class="txt">C/</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_column">
+            <div class="socials">
+                <img src="/assets/logotipo-de-instagram.png" alt="">
+                <img src="/assets/gorjeo.png" alt="">
+                <img src="/assets/facebook.png" alt="">
+            </div>
+        </div>
+    </footer>
 
 </body>
 
