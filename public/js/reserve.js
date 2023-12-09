@@ -1,9 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    if (localStorage) {
+
+    }
     var seats = document.getElementsByClassName("seat");
+
+    let obra = localStorage.getItem('obra');
 
     function handleSeatClick(event) {
         var seatIndex = Array.from(seats).indexOf(event.currentTarget);
-        fetch('/reservedSeats')
+        fetch(`/reservedSeats?obra=${obra}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! ${response}`);
@@ -19,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         headers: {
                             'Content-Type': 'application/json',
                         },
-                        body: JSON.stringify(data),
+                        body: JSON.stringify({ obra: obra, data: data }),
                     })
                         .then(response => {
                             if (!response.ok) {
@@ -30,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             console.log('Error updating data on the server:', error);
                         });
                 } else {
-                    alert("El asiento ya esta reservado");
+                    alert("El asiento ya está reservado");
                 }
             })
             .catch(error => {

@@ -3,11 +3,14 @@ const fs = require('fs');
 const app = express();
 const port = 3000;
 const { initializeSeats } = require('./initSeats');
+let route = '/obrasJson'
+initializeSeats(route);
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set('view engine', 'ejs');
+const users = [];
 
 function getObraContent(nameForUrl, callback) {
     fs.readFile('data/obras.json', 'utf8', (error, data) => {
@@ -86,7 +89,11 @@ app.get('/reserve', (req, res) => {
 });
 
 app.get('/reservedSeats', (req, res) => {
-    fs.readFile('data/reservedSeats.json', 'utf8', (error, data) => {
+
+    const obra = req.query.obra;
+    const filePath = `data/${obra}ReservedSeats.json`;
+
+    fs.readFile(filePath, 'utf8', (error, data) => {
         res.setHeader('Content-Type', 'application/json');
         if (error) {
             console.log('Error reading HTML file:', error);
@@ -97,9 +104,10 @@ app.get('/reservedSeats', (req, res) => {
 });
 
 app.post('/updateReservedSeats', (req, res) => {
-    const updatedData = req.body;
+    const obra = req.body.obra;
+    const updatedData = req.body.data;
 
-    fs.writeFile('data/reservedSeats.json', JSON.stringify(updatedData, null, 2), (error) => {
+    fs.writeFile(`data/${obra}reservedSeats.json`, JSON.stringify(updatedData, null, 2), (error) => {
         if (error) {
             console.log('Error updating reservedSeats.json:', error);
             return;
@@ -136,7 +144,7 @@ app.post('/saveUser', (req, res) => {
 });
 
 app.use(function (req, res, next) {
-    res.status(404).send('Sorry, can\'t find that!');
+    res.status(404).send('Sorry, cant find that!');
 });
 
 app.listen(port, () => {

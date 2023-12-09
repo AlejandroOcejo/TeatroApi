@@ -1,24 +1,29 @@
 const fs = require('fs');
 
 function initializeSeats() {
-    const seatsArray = [];
-    const numberOfSeats = 48;
+    const numberOfSeats = 10;
 
-    for (let seatNumber = 1; seatNumber <= numberOfSeats; seatNumber++) {
-        const seatObj = {
-            seatNumber: seatNumber,
-            isReserved: false,
-            seatOwner: null
-        };
+    const names = getObraNames();
+    names.forEach(element => {
+        const seatsArray = [];
+        for (let seatNumber = 1; seatNumber <= numberOfSeats; seatNumber++) {
+            const seatObj = {
+                seatNumber: seatNumber,
+                isReserved: false,
+                seatOwner: null
+            };
+            seatsArray.push(seatObj);
+        }
 
-        seatsArray.push(seatObj);
-    }
+        fs.writeFileSync(`data/${element}reservedSeats.json`, JSON.stringify(seatsArray, null, 2));
+    });
+}
 
-    fs.writeFileSync('data/reservedSeats.json',
-        JSON.stringify(seatsArray, null, 2));
-
-    console.log('Seats data initialized and written to reservedSeats.json');
-    return seatsArray;
+function getObraNames() {
+    const data = fs.readFileSync('data/obras.json');
+    const jsonData = JSON.parse(data);
+    const names = jsonData.map(obra => obra.nameForUrl);
+    return names;
 }
 
 module.exports = { initializeSeats };
