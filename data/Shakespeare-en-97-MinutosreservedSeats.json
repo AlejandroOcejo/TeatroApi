@@ -1,7 +1,7 @@
 [
   {
     "seatNumber": 1,
-    "isReserved": true,
+    "isReserved": false,
     "seatOwner": null
   },
   {
