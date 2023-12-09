@@ -1,141 +1,216 @@
-body {
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("fonts/roboto-v20-latin-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
 
 header {
-    background: rgb(126, 16, 52);
-    background: linear-gradient(90deg, rgba(126, 16, 52, 1) 5%, rgba(168, 24, 70, 1) 50%, rgba(126, 16, 52, 1) 95%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px;
+  background: #7E1034;
+  background: linear-gradient(90deg, #670d2b 5%, #92153d 50%, #670d2b 95%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
 }
-
-.logoDiv {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
+header .logoDiv {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
 }
-
-.logoa {
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
+header .logoa {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
 }
-
-.menuDiv {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: 0;
-    padding: 20px;
-    width: 40px;
-    height: 40px;
+header .menuDiv {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #7E1034;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #7E1034;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-
 .sidenav a {
-    padding: 8px 8px 8px 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    transition: 0.3s;
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
 }
-.logout-link{
-    display: none;
-}
-.login-link {
-    display: none;
-}
-
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
-
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 0px;
-    font-size: 36px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-video {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 650px;
-    object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 36px;
 }
 
 .obrasTittleDiv {
+  font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  .obrasTittleDiv {
+    font-size: 5vw; /* Tamaño máximo de 5vw */
+  }
+}
+
+footer {
+  display: flex;
+  background-color: #A81846;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  align-items: center;
+}
+footer .contact div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .contact .email_txt {
+  text-decoration: underline;
+}
+footer .contact .txt {
+  font-size: 15px;
+}
+footer .left_column, footer .center_column, footer .right_column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+footer .logo_footer {
+  width: 100px;
+}
+footer .center_column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+footer .center_column h2 {
+  font-size: 40px;
+}
+footer .right_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+footer .socials img {
+  width: 65px;
+  height: 65px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .left_column, footer .center_column, footer .right_column {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .logo_footer {
+    width: 70px;
+  }
+  footer .socials {
+    flex-direction: row;
+    margin-top: 10px;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  }
+  footer .socials img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+video {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 650px;
+  object-fit: fill;
+}
+@media screen and (max-width: 750px) {
+  video {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  video {
+    height: 30%;
+  }
+}
+
+.obrasTittleDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #obrasDiv {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .img-responsive {
-    width: 20%;
-    object-fit: cover;
-    display: block;
-    margin: 0 10px;
-    border: #7E1034 3px solid;
+  width: 20%;
+  object-fit: cover;
+  display: block;
+  margin: 0 10px;
+  border: #7E1034 3px solid;
 }
 
-@media screen and (max-width: 750px) {
-    video {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 40%;
-        object-fit: fill;
-    }
-}
-
-
-@media screen and (max-width: 500px) {
-    video {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 30%;
-        object-fit: fill;
-    }
-}
+/*# sourceMappingURL=index.css.map */

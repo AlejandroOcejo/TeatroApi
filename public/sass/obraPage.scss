@@ -1,0 +1,293 @@
+$primary-color: #7E1034;
+$secondary-color: #A81846;
+$background-color: #f0f0f0;
+$font-family-inter: 'Inter', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.woff2') format('woff2'),
+        url('fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+        url('fonts/roboto-v20-latin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background: $primary-color;
+    background: linear-gradient(90deg, darken($primary-color, 5%) 5%, darken($secondary-color, 5%) 50%, darken($primary-color, 5%) 95%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+
+    .logoDiv {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+    }
+
+    .logoa {
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+    }
+
+    .menuDiv {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $primary-color;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        font-size: 36px;
+    }
+}
+
+
+.bodyDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoObraDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
+
+  .infoHeader {
+    font-size: 200%;
+  }
+
+  .obraName {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .obraDuration {
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 70%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .obraDescription {
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: 24px;
+  }
+
+  .buttonDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12%;
+
+    .reserveButton {
+      width: 200px;
+      height: 75px;
+      background-color: $secondary-color;
+      border: none;
+      border-radius: 7px;
+      color: white;
+      font-weight: bold;
+      font-size: 200%;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+    display: flex;
+    background-color: $secondary-color;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    font-family: $font-family-inter;
+
+    .contact {
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .email_txt {
+            text-decoration: underline;
+        }
+
+        .txt {
+            font-size: 15px;
+        }
+    }
+
+    .left_column, .center_column, .right_column {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .logo_footer {
+        width: 100px;
+    }
+
+    .center_column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .right_column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: right;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        text-align: center;
+
+        .left_column, .center_column, .right_column {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo_footer {
+            width: 70px;
+        }
+
+        .socials {
+            flex-direction: row;
+            margin-top: 10px;
+            justify-content: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .bodyDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+     
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .infoObraDiv {
+      padding: 10px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      .infoHeader {
+        font-size: 150%;
+      }
+
+      .obraDuration {
+        font-size: 60%;
+      }
+
+      .obraDescription {
+        padding: 0;
+        font-size: 18px;
+      }
+
+      .buttonDiv {
+        padding-right: 10px;
+
+        .reserveButton {
+          width: 150px;
+          height: 50px;
+          font-size: 150%;
+        }
+      }
+    }
+  }
+}
