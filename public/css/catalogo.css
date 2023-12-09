@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: rgb(126, 16, 52);
+    background: linear-gradient(90deg, rgba(126, 16, 52, 1) 5%, rgba(168, 24, 70, 1) 50%, rgba(126, 16, 52, 1) 95%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+}
+
+.logoDiv {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+}
+
+.logoa {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+}
+
+.menuDiv {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #7E1034;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.logout-link {
+    display: none;
+}
+
+.login-link {
+    display: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.genreTittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 280%;
+}
+
+.genre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.genre-obras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.obraimgDiv {
+    margin: 10px;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.obraimgDiv img {
+    width: 70%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media screen and (max-width: 500px) {
+    .obraimgDiv img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+}

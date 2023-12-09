@@ -97,6 +97,17 @@ app.get('/reserve', (req, res) => {
         res.send(data);
     });
 });
+app.get('/catalogue', (req, res) => {
+    fs.readFile('views/catalogo.html', 'utf8', (error, data) => {
+        if (error) {
+            console.error('Error reading HTML file:', error);
+            res.status(500).send('Internal Server Error');
+            return;
+        }
+        res.send(data);
+    });
+});
+
 
 app.get('/reservedSeats', (req, res) => {
 
@@ -112,6 +123,8 @@ app.get('/reservedSeats', (req, res) => {
         res.send(data);
     });
 });
+
+
 
 app.post('/updateReservedSeats', (req, res) => {
     const obra = req.body.obra;

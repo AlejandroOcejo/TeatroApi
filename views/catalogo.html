@@ -5,10 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/catalogo.css">
+    <script src="/js/catalogo.js"></script>
 </head>
 
 <body>
-
+    <header>
+        <div class="logoDiv">
+            <a class="logoa" href="/"><img src="/assets/logoblanco.png" href="/a" alt=""></a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="/reserve">Reserva</a>
+            <a href="/register">Registro</a>
+            <a id="loginLink" class="login-link" href="/login">Inicio Sesión</a>
+            <a href="#">Contact</a>
+            <a id="logoutLink" class="logout-link" href="/" onclick="logout()">Cerrar Sesión</a>
+        </div>
+        <span style="font-size:30px;position: absolute;right: 15px;cursor:pointer" onclick="openNav()"><img
+                src="/assets/iconomenu.png" alt=""></span>
+    </header>
+    <div id="output"></div>
+    <button onclick="fetchObras()">aaaaaaaaaaaaaa</button>
 </body>
 
 </html>
