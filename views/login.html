@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
     <script src="/js/index.js"></script>
     <script src="/js/login.js"></script>
 </head>
 
-<body>
+<body onload="load()">
     <header>
         <div class="logoDiv">
             <a class="logoa" href="/"><img src="/assets/logoblanco.png" href="/a" alt=""></a>
@@ -28,20 +28,24 @@
                 src="/assets/iconomenu.png" alt=""></span>
     </header>
 
-    <video class="trailerVideo" autoplay muted>
-        <source src="/videos/trailer1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <div class="obrasTittleDiv">
-        <h1>Obras Destacadas</h1>
+    <div id="container">
+        <div class="registration-container">
+            <a href="/"><img src="/assets/Vector.png" alt="" class="cruz"></a>
+            <form class="forms" action="/loadUser" method="get">
+                <h2 class="title_form">INICIO SESIÓN</h2>
+                <div class="input_flex">
+                    <input class="input_txt" type="email" id="email" name="email" required
+                        placeholder="Correo Electrónico">
+                    <input class="input_password" type="password" id="password" name="password" required
+                        placeholder="Contraseña">
+                    <div class="button_container">
+                        <a href="/register"><button class="button_submit" type="button">Crear Cuenta</button></a>
+                       <button class="button_submit" type="submit" onclick="login()">Inicio Sesión</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div id="obrasDiv">
-
-    </div>
-
 </body>
-
 
 </html>

@@ -45,6 +45,16 @@ function getRandomImage(imgPathArray, usedNumbers) {
     }
     return imgRandomSrc;
 }
+function load(){
+    if (!localStorage.getItem("user")) {
+        document.getElementById('logoutLink').style.display = 'none';
+    }
+
+    if (localStorage.getItem("user")) {
+        document.getElementById('loginLink').style.display = 'none';
+    }
+}
 
 
-window.onload = genObras;
+window.addEventListener('load', genObras);
+window.addEventListener('load', load);
