@@ -66,6 +66,16 @@ app.get('/register', (req, res) => {
         res.send(data);
     });
 });
+app.get('/login', (req, res) => {
+    fs.readFile('views/login.html', 'utf8', (error, data) => {
+        if (error) {
+            console.error('Error reading HTML file:', error);
+            return;
+        }
+        res.send(data);
+    });
+});
+
 
 app.get('/obrasJson', (req, res) => {
     fs.readFile('data/obras.json', 'utf8', (error, data) => {
@@ -127,7 +137,6 @@ app.post('/saveUser', (req, res) => {
         email: email,
         password: password
     };
-
     users.push(user);
 
     var json = JSON.stringify(users);
@@ -142,7 +151,42 @@ app.post('/saveUser', (req, res) => {
         res.send('User saved successfully!');
     });
 });
+function getUsersFromFile() {
+    try {
+        const data = fs.readFileSync('data/users.json', 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.log('Error reading users.json file:', error);
+        return [];
+    }
+}
 
+function validateUser(email, password) {
+    const users = getUsersFromFile();
+    console.log('All users:', users);
+    const foundUser = users.find(user => user.email === email && user.password === password);
+    console.log('Found user:', foundUser);
+    return foundUser;
+}
+
+app.get('/loadUser', (req, res) => {
+    let { email, password } = req.query;
+
+
+    console.log('Received email:', email);
+    console.log('Received password:', password);
+
+    email = decodeURIComponent(email);
+    password = decodeURIComponent(password);
+    const foundUser = validateUser(email, password);
+
+    if (foundUser) {
+        res.redirect(`/`);
+    } else {
+        res.redirect('/login')
+
+    }
+});
 app.use(function (req, res, next) {
     res.status(404).send('Sorry, cant find that!');
 });

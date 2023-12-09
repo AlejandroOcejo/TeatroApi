@@ -11,27 +11,27 @@
   },
   {
     "seatNumber": 3,
-    "isReserved": true,
+    "isReserved": false,
     "seatOwner": null
   },
   {
     "seatNumber": 4,
-    "isReserved": true,
+    "isReserved": false,
     "seatOwner": null
   },
   {
     "seatNumber": 5,
-    "isReserved": true,
+    "isReserved": false,
     "seatOwner": null
   },
   {
     "seatNumber": 6,
-    "isReserved": true,
+    "isReserved": false,
     "seatOwner": null
   },
   {
     "seatNumber": 7,
-    "isReserved": true,
+    "isReserved": false,
     "seatOwner": null
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "seatNumber": 9,
-    "isReserved": true,
+    "isReserved": false,
     "seatOwner": null
   },
   {

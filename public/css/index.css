@@ -60,6 +60,12 @@ header {
     justify-content: center;
     transition: 0.3s;
 }
+.logout-link{
+    display: none;
+}
+.login-link {
+    display: none;
+}
 
 .sidenav a:hover {
     color: #f1f1f1;
