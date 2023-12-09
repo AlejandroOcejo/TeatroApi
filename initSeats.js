@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 function initializeSeats() {
-    const numberOfSeats = 10;
+    const numberOfSeats = 48;
 
     const names = getObraNames();
     names.forEach(element => {

@@ -6,13 +6,8 @@ function login() {
 }
 
 function logout() {
-    // Resto del código...
-
-    // Limpiar información de usuario del localStorage
     localStorage.removeItem("user");
     localStorage.removeItem("password");
 
-    // Ocultar el enlace de "Cerrar Sesión" si el localStorage está vacío
-   
 }
 

@@ -11,7 +11,7 @@ body {
 }
 
 .test {
-    background-color: #dfdfdf83;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,8 +23,8 @@ body {
 .seat {
     background-color: #ffffff;
     border: black solid 2px;
-    height: 12px;
-    width: 15px;
+    height: 50px;
+    width: 50px;
     margin: 3px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -97,14 +97,7 @@ body {
     display: flex;
 }
 
-.screen {
-    background-color: #fff;
-    height: 70px;
-    width: 100%;
-    margin: 15px 0;
-    transform: rotateX(-45deg);
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
-}
+
 
 p.text {
     margin: 5px 0;
