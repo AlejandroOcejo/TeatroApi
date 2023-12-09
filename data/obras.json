@@ -1,0 +1,74 @@
+[
+    {
+        "nameForUrl": "Shakespeare-en-97-Minutos",
+        "name": "Shakespeare en 97 Minutos",
+        "imgRoute": "/assets/obrasImages/SHAKESPEAREEN97MINUTOS.png",
+        "duration": "97 minutos",
+        "genre": "Comedia",
+        "description": "Shakespeare en 97 minutos es un espectáculo teatral de humor delirante que nos invita a zambullirnos en el mundo del mítico dramaturgo a través la risa. Tres actores se proponen interpretar desde la parodia todas las obras de William Shakespeare en solo 97 minutos ¿serán capaces de lograrlo? Se trata de un espectáculo que pretende volver a acercar a las masas a Shakespeare, tal y como fue en su momento, bajándolo del pedestal que tiene hoy en día."
+    },
+    {
+        "nameForUrl": "Laponia",
+        "name": "Laponia",
+        "imgRoute": "/assets/obrasImages/LAPONIA.jpg",
+        "duration": "85 minutos",
+        "genre": "Drama",
+        "description": "Mentiras, verdades, ilusiones y la educación que recibimos desde pequeños... Laponia es una comedia de Cristina Clemente y Marc Angelet que convierte una velada de fiesta e ilusión en una batalla entre hermanas, parejas y cuñados. Una obra que nos hará pensar y reír a la vez que nos planteará diferentes situaciones éticas y morales que nos podrían pasar a todos. ¿La verdad es tan buena como dicen y la mentira tan mala?Laponia es el lugar en el que dos familias se encuentran con la intención de celebrar la Nochebuena y la llegada de Papá Noel. Todo parece ir bien hasta que una de las criaturas explica al otro que Papá Noel no existe, y que es un personaje que ha sido creado para que los padres puedan controlar a sus hijos y hacer que se comporten bien.A partir de aquí, las dos parejas se enzarzan en una discusión sobre la verdad y la mentira, las costumbres y los valores familiares, y comienzan a salir a la luz varias verdades ocultas. ¿Qué secreto inconfesable tiene cada uno de ellos? ¡Descúbrelo tú mismo!"
+    },
+    {
+        "nameForUrl": "El-Quijote",
+        "name": "El Quijote",
+        "imgRoute": "/assets/obrasImages/ELQUIJOTE.jpg",
+        "duration": "60 minutos",
+        "genre": "Historia",
+        "description": "Héctor Urién ha incluido El Quijote en su Teatro de la Palabra, que será contada con una manera de narrar diferente y propia de un profesional de la palabra y de la expresión. Solo Héctor Urién puede contar un clásico en una hora y convertirlo en un relato divertido, humorístico, directo y por supuesto mucho más sencillo.Los espectadores no están preparados para reír a carcajadas gracias a la épica obra de Miguel de Cervantes, que narra las aventuras y desventuras de este caballero soñador que busca justicia y amor en un mundo idealizado, acompañado por su fiel escudero Sancho Panza."
+    },
+    {
+        "nameForUrl": "El-Inconveniente",
+        "name": "El Inconveniente",
+        "imgRoute": "/assets/obrasImages/ELINCONVENIENTE.jpg",
+        "duration": "80 minutos",
+        "genre": "Drama",
+        "description": "El Inconveniente de Juan Carlos Rubio, es una obra protagonizada por Kiti Mánver, Cristóbal Suárez y Marta Velilla. Luis es un chico bien, que vive en una zona bien, lo que le convierte en un amante de su barrio. El piso que le ofrece la agente inmobiliario es todo lo que siempre ha soñado: bajo precio, amplio, luminoso y con unas hermosas vista a la sierra... Todo ideal, ¿verdad? El pequeño inconveniente que presenta llega de la mano de la dueña del piso, quien afirma que vivirá en él hasta el día de su fallecimiento. A sus setenta y cinco años Lola ya ha sido operada del corazón dos veces, y sigue fumándose su cajetilla diaria y bebiéndose todo lo que se le pone por delante. Por este motivo, es de suponer que no aguantará mucho más. Luis decide dar el sí, comprar el piso y esperar a que la vida de excesos haga efecto a su dueña pero, contra todo pronóstico, Lola sigue gozando de una envidiable salud a medida que va pasando el tiempo y es la vida de Luis la que comienza a desmoronarse. Dos personas tan distintas y parecidas a la vez que acabarán compartiendo risas, ternura, emoción, complicidad y hasta puede, que una amistad."
+    },
+    {
+        "nameForUrl": "Bernarda-y-Poncia",
+        "name": "Bernarda y Poncia",
+        "imgRoute": "/assets/obrasImages/BERNARDAYPONCIA.jpg",
+        "duration": "80 minutos",
+        "genre": "Historia",
+        "description": "Bernarda y Poncia es una obra teatral escrita por Pilar Ávila y dirigida por Manuel Galiana, que muestra al gran público lo que aconteció tras la muerte de Adela en La casa de Bernarda Alba, una de las obras cumbre de Federico García Lorca. Una especie de secuela en la que se revelan muchos de los secretos que se guardan ambas mujeres, ama y sirvienta, en su profundo luto. Avalada por el hispanista y especialista en Lorca, Ian Gibson, la adaptación está protagonizada por la propia Pilar Ávila, que interpreta el papel de Bernarda, y Pilar Civera, que da vida a Poncia. La acción teatral transcurre ocho años después de la trágica muerte de Adela, la hija menor de Bernarda Alba, y está estructurada en un solo diálogo entre los dos personajes. Durante la conversación, se van desvelando los secretos que se han ido reservando y comienzan a solucionar los problemas que existen entre ellas, sacando a relucir finalmente sus emociones."
+    },
+    {
+        "nameForUrl": "El-sentido-del-humor",
+        "name": "El sentido del humor",
+        "imgRoute": "/assets/obrasImages/ELSENTIDODELHUMOR.jpeg",
+        "duration": "90 minutos",
+        "genre": "Comedia",
+        "description": "Florentino Fernández, José Mota y Santiago Segura se suben juntos al escenario para fabricar risas durante 90 minutos. Por primera vez en la historia, tres de las figuras más destacadas del humor y de la televisión española aparecen en una única obra: El Sentido del Humor, Dos Tontos y yo. Juntos y por separado, por parejas y en trío, sea como sea para conseguir un único objetivo: hacernos reflexionar y reír en base a los disparates más hilarantes de los escenarios españoles. Y es que los tres representan grandes figuras del mundo del espectáculo. Llevan décadas haciéndonos reír a través de la televisión, con sus numerosos programas como El Informal, Cruz y Raya, La hora de José Mota, Dani & Flo, El show de Flo, Otra Movida, Tu Cara Me suena, o las películas de Torrente con las que Santiago Segura marcó un antes y un después en el cine español. ¡No te lo pierdas!"
+    },
+    {
+        "nameForUrl": "La-Función-que-Sale-mal",
+        "name": "La Función que Sale mal",
+        "imgRoute": "/assets/obrasImages/LAFUNCIONQUESALEMAL.webp",
+        "duration": "100 minutos",
+        "genre": "Comedia",
+        "description": "Una compañía de teatro amateur quiere presentar al público su primera obra: una función de misterio al más puro estilo Agatha Christie, y estamos todos invitados. Sin embargo, montar un gran espectáculo es más complicado, y todo lo que podría salir mal parece que hoy está dispuesto a fallar. Y es que los actores que hacen de muertos se mueven más de lo debido, el atrezzo se cae a cachos, el guión se les olvida, la dirección es un desastre, la iluminación falla... Una consecución de desaciertos que convierten el estreno en una hilarante comedia con reminiscencias al estilo Monthy Python. La función que sale mal ha hecho partirse de risa a más de 8 millones de espectadores desde su estreno en el West End en Londres (2012), acumulando los mayores premios en su categoría, y sigue agotando localidades cada día. También ha triunfado en Broadway y ha sido presentada en 30 países. ¡Ahora puedes disfrutar de ella en Madrid!"
+    },
+    {
+        "nameForUrl": "Una-Terapia-Integral",
+        "name": "Una Terapia Integral",
+        "imgRoute": "/assets/obrasImages/UNATERAPIAINTEGRAL.jpg",
+        "duration": "90 minutos",
+        "genre": "Comedia",
+        "description": "Cristina Clemente y Marc Angelet son los autores de Una Terapia Integral, la comedia que trata de retratar a una sociedad que parece estar eliminando la religión, pero que a su vez tiene una gran necesidad de creer, tener fe en algo que nos ayude a encontrar sentido a nuestras vidas y a poner orden en ellas. Un curso intensivo con cuatro magníficos intérpretes Antonio Molero, Angy Fernández, Esther Ortega y César Camino. ¿Una corteza poco crujiente? Problemas laborales ¿Una miga demasiado densa? Crisis de pareja ¿Un pan soso? Una vida sexual insatisfactoria. Todos quieren apuntarse a los cursos de hacer pan que imparte Toni Roca. Sus diez años de experiencia y las pocas plazas ofertadas hacen que la gente haga cola para apuntarse. Para el maestro, somos el pan que hacemos y su curso garantiza que, después de unas cuantas sesiones, el alumno será capaz de hacer un pan excelente. Lo curioso de su sistema de aprendizaje es que los alumnos no solo tendrán que amasar o controlar la temperatura del horno: también deberán sincerarse, llorar, reír, gritar... y liberarse. Toni Roca tiene clara su premisa: Para hacer un buen pan, no hace falta la mejor harina o la levadura más fresca, para hacer un buen pan solo es necesario estar bien con uno mismo."
+    },
+    {
+        "nameForUrl": "Nada-es-Imposible",
+        "name": "Nada es Imposible",
+        "imgRoute": "/assets/obrasImages/NADAESIMPOSIBLE.png",
+        "duration": "65 minutos",
+        "genre": "Historia",
+        "description": "Tras el éxito cosechado con La Gran Ilusión, uno de los mayores espectáculos de magia de nuestro país, el Mago Pop llega de nuevo para mostrarnos los mejores trucos de ilusionismo en su nuevo espectáculo Nada es imposible. Y es que es innegable que Antonio Díaz ha sabido sacarle partido a lo que mejor sabe hacer, y no ha dudado en demostrar que el arte de la magia puede ser exhibido tanto en los teatros como en televisión. Nada es Imposible es un espectáculo en el que magia y humor se fusionan para hacernos pasar una velada de lo más original. Con el único objetivo de sorprender al público, este experto en magia ha preparado entre un gran secretismo unos de sus shows más creativos hasta el momento, en el que no dudará en hacer uso de la innovación y la fantasía. Antonio Díaz nos invita a un así a hacer un recorrido por lo extraordinario, donde el asombro, la diversión y las sorpresas no terminarán nunca. La historia de Antonio Díaz es la historia de la sorpresa, de la ilusión. De la pequeña pantalla pasó al teatro, para convertirse en el mago más taquillero de toda Europa. Conocido internacionalmente, este Premio Nacional de Magia llega dispuesto a repetir el éxito de sus anteriores espectáculos y demostrarnos que verdaderamente, nada es imposible."
+    }
+]

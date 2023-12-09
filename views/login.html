@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/index.js"></script>
+    <script src="/js/login.js"></script>
+</head>
+
+<body onload="load()">
+    <header>
+        <div class="logoDiv">
+            <a class="logoa" href="/"><img src="/assets/logoblanco.png" href="/a" alt=""></a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/catalogue">Obras</a>
+            <a href="/reserve">Reserva</a>
+            <a href="/register">Registro</a>
+            <a id="loginLink" class="login-link" href="/login">Inicio Sesión</a>
+            <a id="logoutLink" class="logout-link" href="/" onclick="logout()">Cerrar Sesión</a>
+        </div>
+        <span style="font-size:30px;position: absolute;right: 15px;cursor:pointer" onclick="openNav()"><img
+                src="/assets/iconomenu.png" alt=""></span>
+    </header>
+
+    <div id="container">
+        <div class="registration-container">
+            <a href="/"><img src="/assets/Vector.png" alt="" class="cruz"></a>
+            <form class="forms" action="/loadUser" method="get">
+                <h2 class="title_form">INICIO SESIÓN</h2>
+                <div class="input_flex">
+                    <input class="input_txt" type="email" id="email" name="email" required
+                        placeholder="Correo Electrónico">
+                    <input class="input_password" type="password" id="password" name="password" required
+                        placeholder="Contraseña">
+                    <div class="button_container">
+                        <a href="/register"><button class="button_submit" type="button">Crear Cuenta</button></a>
+                        <button class="button_submit" type="submit" onclick="login()">Inicio Sesión</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="left_column">
+            <img src="/assets/logoblanco.png" alt="" class="logo_footer">
+        </div>
+
+        <div class="center_column">
+            <h2>Contactanos</h2>
+            <div class="contact">
+                <div>
+                    <img src="/assets/Phone-handset.png" alt="" class="icon">
+                    <p class="txt">+34 976 459 12 92</p>
+                </div>
+                <div><img src="/assets/correo-electronico.png" alt="" class="icon">
+                    <p class="email_txt">teatralis@gmail.com</p>
+                </div>
+                <div><img src="/assets/pasador-de-ubicacion.png" alt="" class="icon">
+                    <p class="txt">C/</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_column">
+            <div class="socials">
+                <img src="/assets/logotipo-de-instagram.png" alt="">
+                <img src="/assets/gorjeo.png" alt="">
+                <img src="/assets/facebook.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

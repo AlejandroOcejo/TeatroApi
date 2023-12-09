@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("fonts/roboto-v20-latin-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #7E1034;
+    background: linear-gradient(90deg, #670d2b 5%, #92153d 50%, #670d2b 95%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+}
+
+header .logoDiv {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+}
+
+header .logoa {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+}
+
+header .menuDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #7E1034;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 36px;
+}
+
+.bodyDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoObraDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.infoObraDiv .infoHeader {
+    font-size: 200%;
+}
+
+.infoObraDiv .obraName {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoObraDiv .obraDuration {
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 70%;
+    justify-content: center;
+    display: flex;
+}
+
+.infoObraDiv .obraDescription {
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: 24px;
+}
+
+.infoObraDiv .buttonDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12%;
+}
+
+.infoObraDiv .buttonDiv .reserveButton {
+    width: 200px;
+    height: 75px;
+    background-color: #A81846;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    background-color: #A81846;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+footer .contact div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer .contact .email_txt {
+    text-decoration: underline;
+}
+
+footer .contact .txt {
+    font-size: 15px;
+}
+
+footer .left_column,
+footer .center_column,
+footer .right_column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer .logo_footer {
+    width: 100px;
+}
+
+footer .center_column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+}
+
+footer .center_column h2 {
+    font-size: 40px;
+}
+
+footer .right_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .socials img {
+    width: 65px;
+    height: 65px;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .left_column,
+    footer .center_column,
+    footer .right_column {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer .logo_footer {
+        width: 70px;
+    }
+
+    footer .socials {
+        flex-direction: row;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    footer .socials img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bodyDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bodyDiv div {
+        text-align: center;
+    }
+
+    .bodyDiv div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bodyDiv .infoObraDiv {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bodyDiv .infoObraDiv .infoHeader {
+        font-size: 150%;
+    }
+
+    .bodyDiv .infoObraDiv .obraDuration {
+        font-size: 60%;
+    }
+
+    .bodyDiv .infoObraDiv .obraDescription {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .bodyDiv .infoObraDiv .buttonDiv {
+        padding-right: 10px;
+    }
+
+    .bodyDiv .infoObraDiv .buttonDiv .reserveButton {
+        width: 150px;
+        height: 50px;
+        font-size: 150%;
+    }
+}
+
+.imgImg {
+    max-width: 750px;
+    min-height: 900px;
+}
+
+/*# sourceMappingURL=obraPage.css.map */
