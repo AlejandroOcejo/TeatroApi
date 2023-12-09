@@ -35,23 +35,28 @@
 
             </div>
             <div class="infoObraDiv">
-                <h1 class="obraName">
-                    <%= obraContent.name %>
-                </h1>
-                <h2 class="obraDuration">
-                    Duración: <%= obraContent.duration %>
-                </h2>
+                <div class="infoHeader">
+                    <h1 id="obraName" class="obraName">
+                        <%= obraContent.name %>
+                    </h1>
+                    <h2 class="obraDuration">
+                        Duración: <%= obraContent.duration %>
+                    </h2>
+                </div>
+
                 <div class="obraDescription">
                     <%= obraContent.description %>
                 </div>
-                <button class="reserveButton">Reserva</button>
+                <div class="buttonDiv">
+                    <a href="/reserve"><button class="reserveButton">Reserva</button></a>
+                </div>
+
             </div>
         </div>
 
 
     </main>
     <footer>
-        <!-- Your common footer content -->
     </footer>
 </body>
 

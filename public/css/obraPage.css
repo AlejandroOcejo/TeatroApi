@@ -93,7 +93,6 @@ header {
     flex-direction: column;
     padding: 20px;
     justify-content: space-around;
-    align-items: center;
 }
 
 .reserveButton {
@@ -115,10 +114,28 @@ header {
 
 .obraName {
     margin: 10px;
-
+    display: flex;
+    justify-content: center;
 }
 
 .obraDuration {
     margin: 0;
     margin-bottom: 5%;
+    font-size: 70%;
+    justify-content: center;
+    display: flex;
+}
+
+.infoHeader {
+    font-size: 200%
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12%;
+}
+
+.reserveButton{
+    cursor: pointer;
 }
