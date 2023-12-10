@@ -112,7 +112,7 @@ app.get('/catalogue', (req, res) => {
 app.get('/reservedSeats', (req, res) => {
 
     const obra = req.query.obra;
-    const filePath = `data/${obra}ReservedSeats.json`;
+    const filePath = `data/${obra}reservedSeats.json`;
 
     fs.readFile(filePath, 'utf8', (error, data) => {
         res.setHeader('Content-Type', 'application/json');

@@ -1,43 +1,43 @@
 [
   {
     "seatNumber": 1,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 2,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 3,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 4,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 5,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 6,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 7,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 8,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 9,
@@ -111,13 +111,13 @@
   },
   {
     "seatNumber": 23,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 24,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 25,
@@ -151,13 +151,13 @@
   },
   {
     "seatNumber": 31,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 32,
-    "isReserved": true,
-    "seatOwner": "a@a"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 33,

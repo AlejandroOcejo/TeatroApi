@@ -1,33 +1,33 @@
 [
   {
     "seatNumber": 1,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 2,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 3,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 4,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 5,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 6,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 7,
@@ -136,13 +136,13 @@
   },
   {
     "seatNumber": 28,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 29,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 30,
@@ -176,8 +176,8 @@
   },
   {
     "seatNumber": 36,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 37,
@@ -186,8 +186,8 @@
   },
   {
     "seatNumber": 38,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 39,
@@ -221,13 +221,13 @@
   },
   {
     "seatNumber": 45,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 46,
-    "isReserved": true,
-    "seatOwner": "alejandroocejo18@gmail.com"
+    "isReserved": false,
+    "seatOwner": null
   },
   {
     "seatNumber": 47,
