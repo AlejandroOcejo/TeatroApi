@@ -1,33 +1,33 @@
 [
   {
     "seatNumber": 1,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 2,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 3,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 4,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 5,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 6,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 7,
@@ -136,13 +136,13 @@
   },
   {
     "seatNumber": 28,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 29,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 30,
@@ -176,8 +176,8 @@
   },
   {
     "seatNumber": 36,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 37,
@@ -186,8 +186,8 @@
   },
   {
     "seatNumber": 38,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 39,
@@ -221,13 +221,13 @@
   },
   {
     "seatNumber": 45,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 46,
-    "isReserved": false,
-    "seatOwner": null
+    "isReserved": true,
+    "seatOwner": "alejandroocejo18@gmail.com"
   },
   {
     "seatNumber": 47,

@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     var seats = document.getElementsByClassName("seat");
     let obra = localStorage.getItem('obra');
-    let user = localStorage.getItem('user'); 
-    let selectedSeats = []; 
+    let user = localStorage.getItem('user');
+    let selectedSeats = [];
+
     function updateSeatColors(data) {
         for (var i = 0; i < seats.length; i++) {
             if (data && data[i] && data[i].isReserved) {
@@ -17,21 +18,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handleSeatClick(event) {
         var seatIndex = Array.from(seats).indexOf(event.currentTarget);
-        if (!selectedSeats.includes(seatIndex)) {
-            selectedSeats.push(seatIndex); 
-        } else {
-            selectedSeats = selectedSeats.filter(seat => seat !== seatIndex);
-        }
-        updateSeatColors([]); 
+        fetch(`/reservedSeats?obra=${obra}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! ${response}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data && data[seatIndex] && data[seatIndex].isReserved) {
+                    alert("Este asiento ya está reservado. Seleccione otro asiento.");
+                    return;
+                }
+                if (!selectedSeats.includes(seatIndex)) {
+                    selectedSeats.push(seatIndex);
+                } else {
+                    selectedSeats = selectedSeats.filter(seat => seat !== seatIndex);
+                }
+                updateSeatColors(data);
+                console.log("Asientos seleccionados:", selectedSeats);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
     }
 
     for (var i = 0; i < seats.length; i++) {
         seats[i].addEventListener("click", handleSeatClick);
     }
 
+    fetch(`/reservedSeats?obra=${obra}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! ${response}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            updateSeatColors(data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+
     document.getElementById("reserveButton").addEventListener("click", function () {
         if (selectedSeats.length === 0) {
-            alert("Select at least one seat before reserving.");
+            alert("Seleccione al menos un asiento antes de reservar.");
             return;
         }
 
@@ -44,13 +76,13 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(data => {
                 selectedSeats.forEach(seatIndex => {
-                    if (!data[seatIndex].isReserved) {
+                    if (data && data[seatIndex] && !data[seatIndex].isReserved) {
                         data[seatIndex].isReserved = true;
                         data[seatIndex].seatOwner = user;
                     }
                 });
 
-                alert("Asientos reservados!!!");
+                alert("¡Asientos reservados!");
                 updateSeatColors(data);
                 fetch('/updateReservedSeats', {
                     method: 'POST',
