@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/obraPage.css">
     <script src="/js/obraPage.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/index.js"></script>
     <title>
         <%= obraContent.name %>
     </title>
@@ -18,11 +20,14 @@
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/catalogue">Obras</a>
             <a href="/reserve">Reserva</a>
             <a href="/register">Registro</a>
-            <a href="#">Contact</a>
+            <a id="loginLink" class="login-link" href="/login">Inicio Sesión</a>
+            <a id="logoutLink" class="logout-link" href="/" onclick="logout()">Cerrar Sesión</a>
         </div>
-        <span class="menu-icon" onclick="openNav()"><img src="/assets/iconomenu.png" alt=""></span>
+        <span style="font-size:30px;position: absolute;right: 15px;cursor:pointer" onclick="openNav()"><img
+                src="/assets/iconomenu.png" alt=""></span>
     </header>
 
     <main>

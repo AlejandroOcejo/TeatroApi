@@ -1,3 +1,12 @@
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     var seats = document.getElementsByClassName("seat");
     let obra = localStorage.getItem('obra');
